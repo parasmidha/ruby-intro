@@ -12,6 +12,26 @@
 # If the two lists contain the same item, only show it once!
 # Lastly, display each item in the list prepended with "buy ".
 
+my_list = ["diapers", "wipes", "bath toys", "toilet paper"]
+your_list = ["beer", "wipes", "toilet paper", "tacos"]
+# puts your_list.inspect
+combined_list = my_list + your_list
+puts combined_list.inspect
+
+sorted_list = combined_list.sort
+puts sorted_list.inspect
+
+unique_list = sorted_list.uniq
+puts unique_list.inspect
+
+puts "buy #{unique_list[0]}"
+puts "buy #{unique_list[1]}"
+puts "buy #{unique_list[2]}"
+puts "buy #{unique_list[3]}"
+puts "buy #{unique_list[4]}"
+puts "buy #{unique_list[5]}"
+
+
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html

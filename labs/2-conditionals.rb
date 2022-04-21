@@ -19,14 +19,27 @@
 # if dinner == "tacos" || dinner == "pizza"
 # if dinner == "tacos" && dessert == "ice cream"
 
-# 1. set the first die and write it to the screen
-die1 = rand(1..6)
-puts die1
+# # 1. set the first die and write it to the screen
+# die1 = rand(1..6)
+# puts die1
 
-# 2. set the second die and write it to the screen
-die2 = rand(1..6)
-puts die2
+# # 2. set the second die and write it to the screen
+# die2 = rand(1..6)
+# puts die2
 
-# 3. create a variable for the total and write it to the screen
-total = die1 + die2
-puts "The total is: #{total}"
+# # 3. create a variable for the total and write it to the screen
+# total = die1 + die2
+# puts "The total is: #{total}"
+
+roll1 = rand(1..6)
+puts roll1
+roll2 = rand(1..6)
+puts roll2
+total = roll1 +  roll2
+puts total
+if total == 7 || total == 11
+    puts "You win!"
+elsif total == 2 || total == 3 || total == 12
+    puts "You Lose"
+else puts "THE POINT is #{total}"
+end
